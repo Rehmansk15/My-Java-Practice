@@ -1,0 +1,24 @@
+Integer Input
+
+Write a program to get an integer as input and print it. When the user enters an integer, it is stored in a variable test Integer.
+
+Sample Input:
+
+ 56
+
+ Sample Output:
+
+ 56
+
+Code :
+
+import java.util.*;
+public class InputOutput1
+{
+    public static void main(String args[])
+    {
+Scanner sc=new Scanner(System.in);
+int a=sc.nextInt();
+        System.out.print(a);
+    }
+}
