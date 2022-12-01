@@ -1,0 +1,46 @@
+1-D array question
+
+Write a program to input 10 numbers in an array and display only the even numbers if present in the array.
+
+Sample Input:
+
+Enter 10 numbers
+
+
+11
+15
+28
+31
+49
+54
+72
+81
+93
+14
+Sample Output: 
+List of even numbers
+28 54 72 14
+
+
+Code :
+
+import java.util.*;
+public class Array
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int i;
+        int arr[]=new int[10];
+        System.out.println("Enter 10 numbers");
+        System.out.print("List of even numbers");
+        for(i=0;i<10;i++)
+        {   arr[i]=sc.nextInt();
+        }
+        for(i=0;i<10;i++)
+        {
+            if(arr[i]%2==0)
+            System.out.print(" "+arr[i]);
+        }
+    }
+}
