@@ -1,0 +1,16 @@
+Returning Strings
+
+Make a function that will return a greeting statement that uses an input; your program should return, "Hello, <name> how are you doing today?".
+
+Code :
+
+import java.util.*;
+public class str
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        System.out.println("Hello, "+s+" how are you doing today?");
+    }
+}
