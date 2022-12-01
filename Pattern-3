@@ -1,0 +1,63 @@
+Pattern-3
+
+Write a dynamic program to generate the pattern
+
+Sample input:
+
+5
+
+Sample output:
+
+1 2 3 4 5 
+
+ 2 3 4 5 
+
+  3 4 5 
+
+   4 5 
+
+    5 
+
+   4 5 
+
+  3 4 5 
+
+ 2 3 4 5 
+
+1 2 3 4 5
+
+Code :
+
+import java.util.Scanner;
+public class Apattern3
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+         int rows = sc.nextInt();            
+        for (int i= 0; i<= rows-1 ; i++)
+        {
+            for (int j=0; j <i; j++)
+            {
+                System.out.print(" ");
+            }
+            for (int k=i; k<=rows-1; k++)
+            { 
+                System.out.print((k+1)+" ");
+                }
+                System.out.println(""); 
+            
+        } for (int i= rows-2; i>= 0; i--)
+        {
+            for (int j=0; j< i ;j++)
+            {
+                System.out.print(" ");
+            }
+            for (int k=i; k<=rows-1; k++)
+            {
+                System.out.print((k+1)+" ");
+            }
+            System.out.println("");
+        }
+        sc.close();}
+}
