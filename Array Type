@@ -1,0 +1,45 @@
+Array Type
+
+Write a C program to find the type of array as whether it is even, odd or mixed. If all the elements of an array are even, then display the array type as even. If all the elements of an array are odd, then display the array type as odd. If an array has both even and odd elements, then display the array type as mixed.
+
+Sample Input:
+5
+2
+4
+1
+3
+5
+
+Sample Output:
+Mixed 
+
+Code :
+
+import java.util.*;
+public class Type
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int e=0,o=0;
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            arr[i]=sc.nextInt();
+        }
+        for(int i=0;i<n;i++)
+        {
+        if(arr[i]%2==0)
+        e++;
+        else
+        o++;
+        }
+        if(o == n)
+        System.out.println("Odd");
+        else if(e == n)
+         System.out.println("Even");
+        else
+        System.out.println("Mixed");
+    }
+}
