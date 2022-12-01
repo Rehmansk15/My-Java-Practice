@@ -1,0 +1,24 @@
+Double the number
+
+You need to double the integer and return it.
+
+Input:
+
+2
+
+output:
+
+4
+
+Code :
+
+import java.util.*;
+public class duble
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        System.out.println(n*2);
+    }
+}
