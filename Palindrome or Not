@@ -1,0 +1,40 @@
+Palindrome or Not
+
+Write a program to find whether the given string is palindrome or not without using string library functions: 
+
+ INPUT & OUTPUT FORMAT: 
+
+Input consists of 1 string. If the given string is a Palindrome display “palindrome”, else display “Not a Palindrome”.
+
+Sample Input:
+liril
+
+Sample Output:
+palindrome
+
+Code :
+
+import java.util.*;
+public class String9
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        String str1="";
+        char ch;
+        for(int i=0;i<str.length();i++)
+        {
+            ch=str.charAt(i);
+            str1=ch+str1;
+        }
+        if(str1.equals(str))
+        {
+        System.out.println("palindrome");
+        }
+        else
+        {
+            System.out.println("Not a palindrome");
+        }
+    }
+}
