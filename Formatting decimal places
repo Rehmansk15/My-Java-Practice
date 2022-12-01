@@ -1,0 +1,25 @@
+Formatting decimal places
+
+Each number should be formatted that it is rounded to two decimal places. You don't need to check whether the input is a valid number because only valid numbers are used in the tests.
+Input:
+5.5589
+Output:
+5.56 
+
+Code :
+
+import java.util.*;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+public class formt
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double num=sc.nextDouble();
+        DecimalFormat df = new DecimalFormat("#.##");
+        df.setRoundingMode(RoundingMode.FLOOR);
+
+        System.out.println(df.format(num));
+    }
+}
