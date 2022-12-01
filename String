@@ -1,0 +1,44 @@
+Given a string s, find the length of the longest prefix, which is also a suffix. The prefix and suffix should not overlap.
+
+Examples: 
+
+Input : aabcdaabc
+Output : 4
+The string "aabc" is the longest
+prefix which is also suffix.
+
+Input : abcab
+Output : 2
+
+Input : aaaa
+Output : 2
+
+Code :
+
+import java.util.*;
+public class String1
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        String str=sc.next();
+        int s=str.length();
+        int z=0;
+        int i=(s+1)/2;
+        while(i<s)
+        {
+            if(str.charAt(i) == str.charAt(z))
+            {
+                ++z;
+                ++i;
+            }
+            else
+            {
+                i=i-z+1;
+                z=0;
+            }
+        }
+        System.out.println(z);
+        
+    }
+}
