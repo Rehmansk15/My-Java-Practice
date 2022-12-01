@@ -1,0 +1,117 @@
+Online Voting System -2
+
+Code :
+
+import java.util.*;
+class Final
+{
+ int RCB=0, CSK=0, MI=0, SRH=0;
+ public void IPLResult()
+{
+    int wonByVote;
+    if (RCB > CSK && RCB > MI && RCB > SRH)
+    {
+        System.out.print("\n*RCB won the IPL*\n\n");
+        System.out.print("Total vote of RCB : "+RCB+"\n");
+        wonByVote=RCB-CSK;
+        System.out.print("RCB won by "+wonByVote+" votes to CSK\n");
+        wonByVote=RCB-MI;
+        System.out.print("RCB won by "+wonByVote+" votes to MI\n");
+        wonByVote=RCB-SRH;
+        System.out.print("RCB won by "+wonByVote+" votes to SRH\n");
+    }
+    else if (CSK > MI && CSK > SRH)
+    {
+        System.out.print("\n*CSK won the IPL*\n\n");
+        System.out.print("Total vote of CSK : "+CSK+"\n");
+        wonByVote=CSK-RCB;
+        System.out.print("CSK won by "+wonByVote+" votes to RCB\n");
+        wonByVote=CSK-MI;
+        System.out.print("RCB won by "+wonByVote+" votes to MI\n");
+        wonByVote=CSK-SRH;
+        System.out.print("RCB won by "+wonByVote+" votes to SRH\n");
+    }
+    else if (MI > SRH)
+    {
+        System.out.print("\n*MI won the IPL*\n\n");
+        System.out.print("Total vote of MI : "+MI+"\n");
+        wonByVote=MI-CSK;
+        System.out.print("MI won by "+wonByVote+" votes to CSK\n");
+        wonByVote=MI-RCB;
+        System.out.print("MI won by "+wonByVote+" votes to RCB\n");
+        wonByVote=MI-SRH;
+        System.out.print("MI won by "+wonByVote+" votes to SRH\n");
+    }
+    else if(RCB == CSK && RCB == MI && RCB == SRH)
+    {
+        System.out.print("\nNo one won the IPL\n\n");
+        System.out.print("            RCB---CSK---MI---SRH\n");
+        System.out.print("Total Vote   "+RCB+"\t"+CSK+"\t"+MI+"\t"+SRH);
+    }
+    else
+    {
+        System.out.print("\n*SRH won the IPL*\n\n");
+        System.out.print("Total vote of SRH : "+SRH+"\n");
+        wonByVote=SRH-CSK;
+        System.out.print("SRH won by "+wonByVote+" votes to CSK\n");
+        wonByVote=SRH-MI;
+        System.out.print("SRH won by "+wonByVote+" votes to MI\n");
+        wonByVote=SRH-RCB;
+        System.out.print("SRH won by "+wonByVote+" votes to RCB\n");
+    }
+}
+ public void calculateVote(int vote)
+{
+    switch (vote)
+    {
+    case 1:
+        RCB+=1;
+        break;
+    case 2:
+        CSK+=1;
+        break;
+    case 3:
+        MI+=1;
+        break;
+    case 4:
+        SRH+=1;
+        break;
+    }
+}
+}
+public class Project3
+{
+public static void main(String[] args)
+{      
+    Scanner sc=new Scanner(System.in);
+      Final f=new Final();
+    int choose;
+    
+    
+        System.out.print("\n*******Welcome to the Online voting system project*******\n\n");
+        System.out.print("                          IPL VOTING                       \n\n");
+        System.out.print("*************************************************************\n");
+        System.out.print("|           1.RCB             |          2.CSK         |\n");
+        System.out.print("*************************************************************\n");
+        System.out.print("|           3.MI             |          4.SRH              |\n");
+        System.out.print("*************************************************************\n\n");
+    do
+    {    
+        System.out.print("Press 1 to vote RCB\n");
+        System.out.print("Press 2 to vote CSK\n");
+        System.out.print("Press 3 to vote MI\n");
+        System.out.print("Press 4 to vote SRH\n");
+        System.out.print("Press 5 to show IPL result\n");
+        System.out.print("Please choose : ");
+        choose=sc.nextInt();
+        if (choose==5)
+        {
+            f.IPLResult();
+        }else
+        {
+            f.calculateVote(choose);            
+        } 
+        System.out.print("\n");
+    } while (choose != 5);
+}
+}
