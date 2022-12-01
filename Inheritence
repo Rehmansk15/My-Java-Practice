@@ -1,0 +1,71 @@
+Inheritence
+
+Code :
+
+import java.util.*;
+class Dog
+{
+    public void bark()
+    {
+        System.out.println("Barking");
+    }
+    public void eat()
+    {
+        System.out.println("eating");
+    }
+    
+}
+class Cat
+{
+    public void meow()
+    {
+        System.out.println("meowing");
+    }
+    public void eat()
+    {
+        System.out.println("eating");
+    }
+    
+}
+class Lion
+{
+    public void roar()
+    {
+        System.out.println("roaring");
+    }
+    public void eat()
+    {
+        System.out.println("eating");
+    }
+    
+}
+class Bird
+{
+    public void fly()
+    {
+        System.out.println("Flying");
+    }
+    public void eat()
+    {
+        System.out.println("eating");
+    }
+    
+}
+public class Inherit
+{
+    public static void main(String[] args)
+    {
+      Dog d=new Dog();
+      Cat c=new Cat();
+      Lion l=new Lion();
+      Bird b=new Bird();
+      d.bark();
+      d.eat();
+      c.meow();
+      c.eat();
+      l.roar();
+      l.eat();
+      b.fly();
+      b.eat();
+    }
+}
