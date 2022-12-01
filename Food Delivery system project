@@ -1,0 +1,472 @@
+Food Delivery system project
+
+Code :
+
+import java.util.*;
+public class Project
+{
+   public static void main(String[] args)
+    {  Scanner sc=new Scanner(System.in);
+    System.out.println("|-----------------------------------------|");
+    System.out.println("        Indian Restaurant         ");
+       System.out.println("|-----------------------------------------|");
+       System.out.println("Select from the choices below:");
+       System.out.println("1.Veg\n2.Non-Veg");
+       int op=sc.nextInt();
+        if(op==1)
+        {   
+            System.out.println("List of Items in Veg");
+            System.out.println("1.Vegetable Rice\n2.Gobi Manchurian\n3.Veg Biryani\n4.Dal+Rice\n5.Veg Pulao");
+            int v=sc.nextInt();
+            if(v==1)
+            {
+                System.out.println("Vegetable Rice Selected!\nRs.80.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Gobi Manchurian\n2.Veg Biryani\n3.Dal+Rice\n4.Veg Pulao"); 
+                   int its=sc.nextInt();
+                   System.out.println("Gobi Manchurian Selected!\nRs.80.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                        System.out.println(" Your total Payment is : rs.160.00");
+                       System.out.println("Enter your Address");
+                         String an=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            }
+            else if(v==2)
+            {
+                System.out.println("Gobi Manchurian Selected!\nRs.80.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Vegetable Rice\n2.Veg Biryani\n3.Dal+Rice\n4.Veg Pulao"); 
+                   int its=sc.nextInt();
+                   System.out.println("Vegetable Rice Selected!\nRs.80.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.160.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                       String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            }
+            else if(v==3)
+            {
+                System.out.println("Veg Biryani Selected!\nRs.80.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Vegetable Rice\n2.Gobi Manchurian\n3.Dal+Rice\n4.Veg Pulao"); 
+                   int its=sc.nextInt();
+                   System.out.println("Gobi Manchurian Selected!\nRs.80.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.160.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                      String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            }
+            else if(v==4)
+            {
+                System.out.println("Dal+Rice Selected!\nRs.80.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Vegetable Rice\n2.Gobi Manchurian\n3.Veg Biryani\n4.Veg Pulao"); 
+                   int its=sc.nextInt();
+                   System.out.println("Gobi Manchurian Selected!\nRs.80.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.160.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                       String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            }
+            else if(v==5)
+            {
+                System.out.println("Veg Pulao Selected!\nRs.80.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Vegetable Rice\n2.Gobi Manchurian\n3.Veg Biryani\n4.Dal+Rice"); 
+                   int its=sc.nextInt();
+                   System.out.println("Gobi Manchurian Selected!\nRs.80.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.160.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                     String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                  {
+                    System.out.println("Invalid Option");
+                  }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            }
+
+        }
+        else if(op==2)
+        {    System.out.println("|-----------------------------------------|");
+            System.out.println("List of Items in Non-Veg");
+            System.out.println("1.Chicken Biryani\n2.Mutton Biryani\n3.Tandoori\n4.Chicken 65\n5.Chicken Dum Biryani");
+            int v=sc.nextInt();
+            if(v==1)
+            {
+                System.out.println("Chicken Biryani Selected!\nRs.100.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Mutton Biryani\n2.Tandoori\n3.Chicken 65\n4.Chicken Dum Biryani"); 
+                   int its=sc.nextInt();
+                   System.out.println("Mutton Biryani Selected!\nRs.100.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.200.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                       int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                      String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                   {
+                    System.out.println("Invalid Option");
+                   }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            
+            }
+            else if(v==2)
+            {
+                System.out.println("Mutton Biryani Selected!\nRs.100.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Chicken Biryani\n2.Tandoori\n3.Chicken 65\n4.Chicken Dum Biryani"); 
+                   int its=sc.nextInt();
+                   System.out.println("Chicken Biryani Selected!\nRs.100.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.200.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                      String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            
+            }
+            else if(v==3)
+            {
+                System.out.println("Tandoori Selected!\nRs.100.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Chicken Biryani\n2.Tandoori\n3.Chicken 65\n4.Chicken Dum Biryani"); 
+                   int its=sc.nextInt();
+                   System.out.println("Chicken Biryani Selected!\nRs.100.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.200.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                       String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            
+            }
+            else if(v==4)
+            {
+                System.out.println("Chicken 65 Selected!\nRs.100.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Chicken Biryani\n2.Tandoori\n3.Chicken 65\n4.Chicken Dum Biryani"); 
+                   int its=sc.nextInt();
+                   System.out.println("Chicken Biryani Selected!\nRs.100.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.200.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                     String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            
+            }
+            else if(v==5)
+            {
+                System.out.println("Chicken Dum Biryani Selected!\nRs.100.00");
+                System.out.println("Do you want to add another item ?");
+                System.out.println("1.Yes or 2.No");
+                int it=sc.nextInt();
+                if(it==1)
+                {
+                   System.out.println("1.Chicken Biryani\n2.Tandoori\n3.Chicken 65\n4.Chicken Dum Biryani"); 
+                   int its=sc.nextInt();
+                   System.out.println("Chicken Biryani Selected!\nRs.100.00");
+                   System.out.println("1.Yes or 2.No");
+                   int itsm=sc.nextInt();
+                   if(itsm==2)
+                   {
+                       System.out.println(" Your total Payment is : rs.200.00");
+                       System.out.println("Enter your Address");
+                       System.out.println("Enter door no:");
+                        int sss=sc.nextInt();
+                      System.out.println("Enter Street");
+                      String an=sc.next();
+                      System.out.println("Enter City");
+                        String an1=sc.next();
+                        System.out.println("Enter Pincode");
+                        int sss1=sc.nextInt();
+                        System.out.println("Enter District");
+                        String an2=sc.next();
+                       System.out.println("Enter State");
+                        String an3=sc.next();
+                       System.out.println("Select the Payment Options:");
+                       System.out.println("1.Cash on Delivery\n2.Online Payment");
+                       int s1=sc.nextInt();
+                       System.out.println("Order has been placed for Delivery!!");
+                   }
+                   else
+                {
+                System.out.println("Invalid Option");
+                }
+                }
+                else
+                {
+                System.out.println("Invalid Option");
+                }
+            
+            }
+            else
+            {
+                System.out.println("Invalid Option");
+            }
+        }
+        else
+        {
+            System.out.println("Invalid Option");
+        }
+    }
+}
