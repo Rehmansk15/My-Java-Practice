@@ -1,0 +1,52 @@
+Pattern VII
+
+Write a Python program to print the given pattern from user-defined values(dynamic values).
+
+Sample input 1:
+5
+Sample output 1:
+*****
+*     *
+*     *
+*     *
+***** 
+
+Sample input 2:
+8
+Sample output 2:
+********
+*          *
+*          *
+*          *
+*          *
+*          *
+*          *
+********
+
+Code :
+
+import java.util.*;
+public class Pattern7
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<=n;i++)
+        {
+            for(int j=0;j<=n;j++)
+            {
+                if(i==0||i==n||j==0||j==n)
+                {
+                    System.out.print("*");
+                }
+                else
+                {
+                    System.out.print(" ");
+                }
+            }
+            System.out.println();
+        }
+        
+    }
+}
