@@ -1,0 +1,23 @@
+Question-1 (String) Updated
+
+Coding Question 1: Based on String
+Write a program to print the following output: 
+
+Input: a1b2c3
+Output: abbccc
+Caution: Don't use inbuilt functions
+Explanation:
+
+After we have the number 1 so a repeats one time = a
+After b we have the number 2 so it repeats two times = bb
+After c we have the number 3 so it repeats three times = ccc
+Final Output: abbccc
+Algorithm:
+
+Start the Program
+Get the input as a single string
+Loop through the entire string to find the numbers
+After finding the number, Repeat the previous character the same number of times
+For example a4 ( So you find the number 4 and print a 4 times)
+Follow step 3,4 for the entire string
+End the Program
